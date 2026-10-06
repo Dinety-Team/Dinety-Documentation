@@ -11,7 +11,7 @@ on:
     paths: 
       - 'src/**'
       - 'book.toml'
-
+      - '.github/workflows/**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -40,6 +40,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install mdBook
         run: |
+          cargo install mdbook mdbook-i18n-helpers
           sudo apt-get install -y gettext
       - name: Setup Pages
         id: pages
