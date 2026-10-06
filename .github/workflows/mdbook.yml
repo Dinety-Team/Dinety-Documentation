@@ -28,7 +28,7 @@ concurrency:
   cancel-in-progress: false 
 
 env:
-  LANGUAGES: zh_CN
+  LANGUAGES: zh-CN
 
 jobs:
   # Build job
@@ -37,21 +37,21 @@ jobs:
     env:
       MDBOOK_VERSION: 0.5.4
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install mdBook
         run: |
           cargo install mdbook mdbook-i18n-helpers
           sudo apt-get install -y gettext
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with mdBook
         run: |
           mdbook build
           for lang in ${{ env.LANGUAGES }}; do
             MDBOOK_BOOK__LANGUAGE=$lang mdbook build -d book/$lang
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./book
 
