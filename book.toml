@@ -1,3 +1,7 @@
 [book]
-authors = []
+authors = ["WuWei Chan"]
 language = "en"
+title = "Dinety Documentation"
+
+[preprocessor.gettext]
+after = ["links"]

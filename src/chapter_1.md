@@ -1,14 +1,3 @@
-# Chapter 1
+# Introduction
 
-中文
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "mdBook\n";
-}
-
-// 代码
-
-```
+Dinety is a free ("Libre") rhythm game.

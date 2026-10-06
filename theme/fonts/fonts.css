@@ -91,76 +91,24 @@
        url('{{ resource "fonts/open-sans-v17-all-charsets-800italic.woff2" }}') format('woff2');
 } */
 
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 150;
-  src: local('MiSans Thin'),
-  local('MiSans-Thin'),
-  url('{{ resource "fonts/MiSans-Thin.woff2" }}') format('woff2');
-}
 
 @font-face {
   font-family: 'MiSans';
   font-style: normal;
   font-weight: 200;
-  src: local('MiSans ExtraLight'),
-  local('MiSans-ExtraLight'),
-  url('{{ resource "fonts/MiSans-Thin.woff2" }}') format('woff2');
-}
-
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 250;
   src: local('MiSans Light'),
   local('MiSans-Light'),
   url('{{ resource "fonts/MiSans-Light.woff2" }}') format('woff2');
 }
 
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 305;
-  src: local('MiSans Normal'),
-  local('MiSans-Normal'),
-  url('{{ resource "fonts/MiSans-Normal.woff2" }}') format('woff2');
-}
 
 @font-face {
   font-family: 'MiSans';
   font-style: normal;
-  font-weight: 330;
+  font-weight: 250;
   src: local('MiSans Regular'),
-  local('MiSans-ExtraLight'),
-  url('{{ resource "fonts/MiSans-Thin.Regular" }}') format('woff2');
-}
-
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 380;
-  src: local('MiSans Medium'),
-  local('MiSans-Medium'),
-  url('{{ resource "fonts/MiSans-Medium.woff2" }}') format('woff2');
-}
-
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 450;
-  src: local('MiSans Demibold'),
-  local('MiSans-Demibold'),
-  url('{{ resource "fonts/MiSans-Demibold.woff2" }}') format('woff2');
-}
-
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 520;
-  src: local('MiSans Semibold'),
-  local('MiSans-Semibold'),
-  url('{{ resource "fonts/MiSans-Semibold.woff2" }}') format('woff2');
+  local('MiSans-Regular'),
+  url('{{ resource "fonts/MiSans-Regular.woff2" }}') format('woff2');
 }
 
 @font-face {
@@ -172,19 +120,17 @@
   url('{{ resource "fonts/MiSans-Bold.woff2" }}') format('woff2');
 }
 
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('MiSans Heavy'),
-  local('MiSans-Heavy'),
-  url('{{ resource "fonts/MiSans-Heavy.woff2" }}') format('woff2');
-}
-
 /* source-code-pro-500 - latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 500;
   src: url('{{ resource "fonts/source-code-pro-v11-all-charsets-500.woff2" }}') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Maple Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('{{ resource "fonts/jet-brains-maple-mono-regular.woff2" }}') format('woff2');
 }
