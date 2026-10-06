@@ -50,6 +50,7 @@ jobs:
           mdbook build
           for lang in ${{ env.LANGUAGES }}; do
             MDBOOK_BOOK__LANGUAGE=$lang mdbook build -d book/$lang
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
