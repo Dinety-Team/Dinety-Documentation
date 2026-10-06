@@ -1,2 +1,4 @@
 book
 *.pot
+*.po~
+*.mo
